@@ -44,6 +44,8 @@ type MessageQueueEvent struct {
 type CreateSnapshotParams struct {
 	FolderId string `json:"folderId"`
 	DiskId   string `json:"diskId"`
+	DiskName string `json:"DiskName"`
+	DiskLabels map[string]string `json:"DiskLabels"`
 }
 
 type Response struct {
