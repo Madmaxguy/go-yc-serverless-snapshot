@@ -1,0 +1,21 @@
+content: |-
+  {{ include "Readme.base.md" }}
+
+  ----
+  # Terraform docs (generated)
+
+  ## Requirements
+
+  {{ .Content }}
+
+  
+
+sections:
+  hide:
+    - requirements
+
+output:
+  file: "Readme.md"
+  mode: replace
+  template: |-
+    {{ .Content }}
